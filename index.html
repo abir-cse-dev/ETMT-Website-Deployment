@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--Website Author-->
+    <link rel="author" href="https://github.com/abir-cse-dev">
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="ETMT_logo.jpeg" />
+    <link rel="stylesheet" href="nav.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electro Mata</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #050816;
+        color: #fff;
+      }
+      nav {
+        background: linear-gradient(
+          to bottom,
+          rgba(10, 15, 30, 1) 0%,
+          rgba(10, 15, 30, 0.8) 70%,
+          rgba(10, 15, 30, 0.4) 100%
+        );
+
+        /* Optional: Ensure text remains readable over the background */
+        color: #ffffff;
+
+        position: sticky;
+        top: 0;
+        padding: 15px;
+        text-align: center;
+        z-index: 10;
+      }
+      nav a {
+        color: #00e5ff;
+        text-decoration: none;
+        margin: 0 10px;
+        padding: 20px;
+      }
+      .hero {
+        text-align: center;
+        margin-top: -40px;
+        padding: 60px 20px;
+        position: relative;
+        z-index: 1;
+      }
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        height: 600px;
+
+        background-image: url("images/ETMTneon_logo.jpeg");
+        background-size: cover;
+        background-position: center;
+
+        mask-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 1) 1%,
+          rgba(0, 0, 0, 0) 99%
+        );
+      }
+      .logo {
+        width: 90px;
+        border-radius: 20px;
+        box-shadow: 0 0 25px #03f0f8;
+      }
+      .card {
+        /* Semi-transparent dark background (0.6 makes it 60% opaque) */
+        background: rgba(15, 23, 42, 0.6);
+
+        /* Optional: A very subtle border to help define the card edges over the background */
+        border: 1px solid rgba(255, 255, 255, 0.05);
+
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 15px;
+        max-width: 1100px;
+        width: 90%;
+      }
+      h1,
+      h2 {
+        color: #00e5ff;
+      }
+      .btn {
+        background: #00e5ff;
+        color: #000;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      footer {
+        text-align: center;
+        padding: 30px;
+      }
+    
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="roadmap.html">Roadmap</a>
+      <a href="community.html">Community</a>
+    </nav>
+
+    <section class="hero" id="home">
+      <div class="animate__animated animate__heartBeat">
+        <img src="images/ETMT_logo.jpeg" class="logo" />
+      </div>
+
+      <h1 class="animate__animated animate__jello">Electro Mata</h1>
+
+      <p class="card">
+        Contract Address <br /><br />
+        <b>0x69A4EdA95f0f5f28AE9126260E34B7063c47ecC3</b>
+      </p>
+      <button class="btn" onclick="copyContract()">Copy Contract</button>
+    </section>
+
+    <div class="card">
+      <h1>
+        ETMT (Electro Mata) Official <br />
+        Whitepaper v1.1
+      </h1>
+      <h3>
+        <b><i>Community Driven • Zero Tax • BNB Smart Chain</i></b>
+      </h3>
+    
+    <div class="card">
+      <h2>1. Executive Summary</h2>
+      <p>
+        ETMT (Electro Mata) is a community-driven BEP-20 token built on the BNB
+        Smart Chain (BSC). The project focuses on transparency, security,
+        sustainable growth, and long-term ecosystem development.
+      </p>
+      <br />
+      <p>
+        With a fixed supply, 0% Buy Tax, and 0% Sell Tax, ETMT aims to provide a
+        simple, efficient, and accessible digital asset for holders and
+        investors.
+      </p>
+    </div>
+    <div class="card">
+      <h2>2. Vision</h2>
+      <p>
+        To establish ETMT as a trusted and globally recognized blockchain
+        ecosystem driven by innovation, transparency, and community growth.
+      </p>
+    </div>
+    <div class="card">
+      <h2>3. Mission</h2>
+      <ul>
+        <li>Build a strong global community</li>
+        <li>Expand ecosystem adoption</li>
+        <li>Strengthen liquidity and market accessibility</li>
+        <li>Support long-term value creation</li>
+        <li>Maintain transparency and security</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>4. Token Information</h2>
+      <p><b>Token Name:</b> Electro Mata</p>
+      <p><b>Symbol:</b> ETMT</p>
+      <p><b>Network:</b> BNB Smart Chain (BEP-20)</p>
+      <p><b>Total Supply:</b> 220,000,000 ETMT</p>
+      <p><b>Maximum Supply:</b> 220,000,000 ETMT</p>
+      <p><b>Buy Tax:</b> 0%</p>
+      <p><b>Sell Tax:</b> 0%</p>
+      <p><b>Mint Function:</b> Disabled</p>
+      <br />
+      <p><i>No additional ETMT tokens can ever be created.</i></p>
+    </div>
+    <div class="card">
+      <h2>5. Token Allocation</h2>
+      <div>
+      <table border="1"
+      style="border-collapse: collapse; width: 100%;">
+        <tr align="center">
+          <th>Category</th>
+          <th>Allocation</th>
+          <th>Amount</th>
+        </tr>
+        <tr>
+          <td>Liquidity Reserve</td>
+          <td align="center">60%</td>
+          <td align="center">132M ETMT</td>
+        </tr>
+        <tr>
+          <td>Presale</td>
+          <td align="center">30%</td>
+          <td align="center">66M ETMT</td>
+        </tr>
+        <tr>
+          <td>Marketing & Partnerships</td>
+          <td align="center">4%</td>
+          <td align="center">8.8M ETMT</td>
+        </tr>
+        <tr>
+          <td>Treasury Reserve</td>
+          <td align="center">3%</td>
+          <td align="center">6.6M ETMT</td>
+        </tr>
+        <tr>
+          <td>Ecosystem Development</td>
+          <td align="center">2%</td>
+          <td align="center">4.4M ETMT</td>
+        </tr>
+        <tr>
+          <td>Community Rewards</td>
+          <td align="center">1%</td>
+          <td align="center">2.2M ETMT</td>
+        </tr>
+      </table>
+    </div>
+    </div>
+    
+    <div class="card">
+      <h2>6. Liquidity Strategy</h2>
+      <p>60% of the total supply is allocated to liquidity development.</p>
+
+      <p>Liquidity will be deployed gradually in multiple phases to:</p>
+      <ul>
+        <li>Improve market stability</li>
+        <li>Increase trading depth</li>
+        <li>Reduce volatility</li>
+        <li>Support sustainable growth</li>
+        <li>Strengthen investor confidence</li>
+      </ul>
+      <p>
+        A portion of liquidity may be locked through recognized
+        liquidity-locking platforms to enhance transparency and trust.
+      </p>
+    </div>
+    <div class="card">
+      <h2>7. Security & Transparency</h2>
+      <p>ETMT prioritizes security and community trust through:</p>
+      <ul>
+        <li>Fixed Maximum Supply</li>
+        <li>BscScan Verified Smart Contract</li>
+        <li>0% Buy & Sell Tax</li>
+        <li>Transparent Project Updates</li>
+        <li>Community-Focused Development</li>
+        <li>Liquidity Management Strategy</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>8. Ecosystem Growth Strategy</h2>
+      <p>ETMT plans to expand through:</p>
+      <h3>Community Development</h3>
+      <p>
+        Building active communities across Telegram, X (Twitter), YouTube,
+        TikTok, and other platforms.
+      </p>
+      <h3>Strategic Partnerships</h3>
+      <p>
+        Collaborating with blockchain projects, businesses, and ecosystem
+        partners.
+      </p>
+      <h3>Marketing & Adoption</h3>
+      <p>
+        Increasing awareness through marketing campaigns, exchange applications,
+        and ecosystem partnerships.
+      </p>
+      <h3>Ecosystem Development</h3>
+      <p>
+        Exploring future utilities, services, and community-driven initiatives.
+      </p>
+    </div>
+    <div class="card">
+      <h2>9. Buyback & Burn Framework</h2>
+      <p>
+        Subject to ecosystem growth and treasury performance, ETMT may
+        implement:
+      </p>
+      <ul>
+        <li>Strategic market buybacks</li>
+        <li>Periodic token burn events</li>
+        <li>Liquidity strengthening initiatives</li>
+      </ul>
+      <p>All activities will be publicly announced to ensure transparency.</p>
+    </div>
+    <div class="card">
+      <h2>10. Team</h2>
+      <h3>Safin Khan</h3>
+      <p>Founder & Project Lead</p>
+      <h3>Olive Khan</h3>
+      <p>Core Investor</p>
+      <h3>Abir Khan</h3>
+      <p>Blockchain & Web Designer</p>
+      <h3>Kinbird</h3>
+      <p>Strategic Partner</p>
+    </div>
+    <div class="card">
+      <h2>11. Exchange Expansion</h2>
+      <p>
+        As the ETMT ecosystem grows, the project aims to pursue listings on
+        major cryptocurrency exchanges, including:
+      </p>
+      <ul>
+        <li>Bitget</li>
+        <li>Bybit</li>
+        <li>MEXC</li>
+      </ul>
+      <p>
+        Additional exchange opportunities will be evaluated as development
+        progresses.
+      </p>
+    </div>
+    <div class="card">
+      <h2>12. Risk Disclosure</h2>
+      <p>Cryptocurrency investments involve risks and market volatility.</p>
+      <p>
+        ETMT does not guarantee profits, returns, or future price appreciation.
+      </p>
+      <p>
+        Participants should conduct their own research (DYOR) before making
+        investment decisions.
+      </p>
+    </div>
+    <div class="card">
+      <h2>13. Conclusion</h2>
+      <p>
+        ETMT is committed to building a transparent, secure, and
+        community-driven blockchain ecosystem.
+      </p>
+      <p>
+        Through strong liquidity management, ecosystem development, strategic
+        partnerships, and active community participation, ETMT aims to establish
+        a sustainable foundation for long-term growth and success.
+      </p>
+    </div>
+   
+    <div class="card">
+      <h2>Official Project</h3>
+      <p><b>ETMT (Electro Mata)</b></p>
+      <p><i>BNB Smart Chain | BEP-20 | 220M Supply | 0% Buy Tax | 0% Sell Tax</i></p>
+    </div>
+    </div>
+    <hr>
+    <footer>© Electro Mata</footer>
+
+    <script>
+      function copyContract() {
+        navigator.clipboard.writeText(
+          "0x69A4EdA95f0f5f28AE9126260E34B7063c47ecC3",
+        );
+        alert("Contract copied");
+      }
+    </script>
+  </body>
+</html>
