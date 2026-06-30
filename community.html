@@ -74,6 +74,17 @@
         text-align: center;
         padding: 30px;
       }
+      @media (max-width: 480px) {
+        .card {
+          font-size: 14px;
+        }
+
+        /* Shrinks all images to roughly 60% of their desktop size while keeping proportions */
+        .card img {
+          max-width: 60%;
+          height: auto;
+        }
+      }
     </style>
   </head>
   <body>
