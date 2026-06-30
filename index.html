@@ -13,10 +13,10 @@
     <link rel="icon" href="images/etmt_logo.jpeg" />
     
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Electro Mata</title>
     <style>
-      
+    
       html {
   /* Automatically scales the base size between 12px and 16px based on screen width */
   font-size: clamp(12px, 1vw + 8px, 16px); 
@@ -26,6 +26,8 @@
         font-family: Arial, sans-serif;
         background: #050816;
         color: #fff;
+        max-width: 100vw;
+  overflow-x: hidden;
       }
       nav {
        
@@ -42,14 +44,14 @@
 
         position: sticky;
         top: 0;
-        padding: 15px;
+        padding: 10px;
         text-align: center;
         z-index: 10;
       }
       nav a {
         color: #00e5ff;
         text-decoration: none;
-        margin: 11px;
+        margin: 25px;
         
       }
       .hero {
